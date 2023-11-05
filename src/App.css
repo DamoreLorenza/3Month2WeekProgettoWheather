@@ -1,38 +1,32 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+
 .App {
   text-align: center;
+ min-height: 100vh;
+ width: auto;
+background-image: url(https://c.pxhere.com/photos/68/8d/clouds_sky_blue_sky_clouds_blue_sky_clouds_nature_weather_white-698353.jpg!d);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.linkcard{
+  text-decoration: none;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.anc{
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.butt{
+  text-decoration: none;
+  color: black;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cc{
+  background-color: transparent;
 }
