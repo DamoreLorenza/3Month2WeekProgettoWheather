@@ -21,7 +21,7 @@ function NavBar() {
           >
             <Nav.Link href="/temperature" className='fw-bold'>Home</Nav.Link>
             
-            <Nav.Link href="/detail" className='fw-bold'>Oggi</Nav.Link>
+            <Nav.Link href="/oggi" className='fw-bold'>Oggi</Nav.Link>
             
             <NavDropdown title="Meteo" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3" >Oggi</NavDropdown.Item>

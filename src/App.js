@@ -17,6 +17,8 @@ import Napoli from './components/city/napoli';
 import Udine from './components/city/udine';
 import Venezia from './components/city/venezia';
 import Matera from './components/city/matera';
+import PP from './components/prova';
+import Elenco from './components/oggi';
 
 
 function App() {
@@ -42,8 +44,8 @@ function App() {
         <Route element={<Udine/>} path='/udine'/>
         <Route element={<Venezia/>} path='/venezia'/>
         <Route element={<Matera/>} path='/matera'/>
-      <Route element={<Detail/>} path='/detail'/>
-      
+        <Route element={<PP/>} path='/prova'/>
+        <Route element={<Elenco/>} path='/oggi'/>
       </Routes>
       </BrowserRouter>
     </div>
