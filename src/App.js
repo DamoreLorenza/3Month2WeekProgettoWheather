@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import NavBar from './components/navBar';
 import Today from './components/today';
-import Detail from './components/detail';
 import Temp from './components/temperature';
 import Pescara from './components/city/pescara';
 import Milano from './components/city/milano';
@@ -19,6 +18,17 @@ import Venezia from './components/city/venezia';
 import Matera from './components/city/matera';
 import PP from './components/prova';
 import Elenco from './components/oggi';
+import PescaraWeek from './components/week/pescaraWeek';
+import MilanoWeek from './components/week/milanoWeek';
+import RomaWeek from './components/week/romaWeek';
+import RiminiWeek from './components/week/riminiWeek';
+import AnconaWeek from './components/week/anconaWeek';
+import BolognaWeek from './components/week/bolognaWeek';
+import CagliariWeek from './components/week/cagliariWeek';
+import NapoliWeek from './components/week/napoliWeek';
+import UdineWeek from './components/week/udineWeek';
+import VeneziaWeek from './components/week/veneziaWeek';
+import MateraWeek from './components/week/materaWeek';
 
 
 function App() {
@@ -46,6 +56,17 @@ function App() {
         <Route element={<Matera/>} path='/matera'/>
         <Route element={<PP/>} path='/prova'/>
         <Route element={<Elenco/>} path='/oggi'/>
+        <Route element={<PescaraWeek/>} path='/pescaraWeek'/>
+        <Route element={<MilanoWeek/>} path='/milanoWeek'/>
+        <Route element={<RomaWeek/>} path='/romaWeek'/>
+        <Route element={<RiminiWeek/>} path='/riminiWeek'/>
+        <Route element={<AnconaWeek/>} path='/anconaWeek'/>
+        <Route element={<BolognaWeek/>} path='/bolognaWeek'/>
+        <Route element={<CagliariWeek/>} path='/cagliariWeek'/>
+        <Route element={<NapoliWeek/>} path='/napoliWeek'/>
+        <Route element={<UdineWeek/>} path='/udineWeek'/>
+        <Route element={<VeneziaWeek/>} path='/veneziaWeek'/>
+        <Route element={<MateraWeek/>} path='/materaWeek'/>
       </Routes>
       </BrowserRouter>
     </div>
@@ -53,4 +74,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
 

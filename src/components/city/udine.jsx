@@ -83,6 +83,70 @@ return(
 </Row>
 {dati && (
         <Row>
+          <Col  md={4} lg={3} xl={3} xxl={2}>
+            <Card className="bg-dark text-white mt-5" style={{height:200}}>
+            
+              <Card.Text className="fs-4">{dati.list[6].dt_txt}</Card.Text>
+            
+              <Card.Text className="fs-5">
+              {dati.list[6].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[6].main.humidity}%
+              </Card.Text>
+<Card.Text>
+            {dati && dati.list[6].weather[0].main === "Clouds" && (
+    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
+  )}  {dati && dati.list[6].weather[0].main === "Rain" && (
+    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
+  )} {dati && dati.list[6].weather[0].main === "Clear" && (
+    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
+  )}   {dati.list[6].weather[0].main}
+              </Card.Text>
+
+            </Card>
+           
+          </Col>
+          <Col  md={4} lg={3} xl={3} xxl={2}>
+            <Card className="bg-dark text-white mt-5" style={{height:200}}>
+            
+              <Card.Text className="fs-4">{dati.list[7].dt_txt}</Card.Text>
+            
+              <Card.Text className="fs-5">
+              {dati.list[7].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[7].main.humidity}%
+              </Card.Text>
+<Card.Text>
+            {dati && dati.list[7].weather[0].main === "Clouds" && (
+    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
+  )}  {dati && dati.list[7].weather[0].main === "Rain" && (
+    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
+  )} {dati && dati.list[7].weather[0].main === "Clear" && (
+    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
+  )}   {dati.list[7].weather[0].main}
+              </Card.Text>
+
+            </Card>
+           
+          </Col>
+          <Col  md={4} lg={3} xl={3} xxl={2}>
+            <Card className="bg-dark text-white mt-5" style={{height:200}}>
+            
+              <Card.Text className="fs-4">{dati.list[0].dt_txt}</Card.Text>
+            
+              <Card.Text className="fs-5">
+              {dati.list[0].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[0].main.humidity}%
+              </Card.Text>
+<Card.Text>
+            {dati && dati.list[0].weather[0].main === "Clouds" && (
+    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
+  )}  {dati && dati.list[0].weather[0].main === "Rain" && (
+    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
+  )} {dati && dati.list[0].weather[0].main === "Clear" && (
+    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
+  )}   {dati.list[0].weather[0].main}
+              </Card.Text>
+
+            </Card>
+           
+          </Col>
+
             <Col  md={4} lg={3} xl={3} xxl={2}>
             <Card className="bg-dark text-white mt-5" style={{height:200}}>
             
@@ -189,69 +253,7 @@ return(
             </Card>
            
           </Col>
-          <Col  md={4} lg={3} xl={3} xxl={2}>
-            <Card className="bg-dark text-white mt-5" style={{height:200}}>
-            
-              <Card.Text className="fs-4">{dati.list[6].dt_txt}</Card.Text>
-            
-              <Card.Text className="fs-5">
-              {dati.list[6].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[6].main.humidity}%
-              </Card.Text>
-<Card.Text>
-            {dati && dati.list[6].weather[0].main === "Clouds" && (
-    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
-  )}  {dati && dati.list[6].weather[0].main === "Rain" && (
-    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
-  )} {dati && dati.list[6].weather[0].main === "Clear" && (
-    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
-  )}   {dati.list[6].weather[0].main}
-              </Card.Text>
 
-            </Card>
-           
-          </Col>
-          <Col  md={4} lg={3} xl={3} xxl={2}>
-            <Card className="bg-dark text-white mt-5" style={{height:200}}>
-            
-              <Card.Text className="fs-4">{dati.list[7].dt_txt}</Card.Text>
-            
-              <Card.Text className="fs-5">
-              {dati.list[7].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[7].main.humidity}%
-              </Card.Text>
-<Card.Text>
-            {dati && dati.list[7].weather[0].main === "Clouds" && (
-    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
-  )}  {dati && dati.list[7].weather[0].main === "Rain" && (
-    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
-  )} {dati && dati.list[7].weather[0].main === "Clear" && (
-    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
-  )}   {dati.list[7].weather[0].main}
-              </Card.Text>
-
-            </Card>
-           
-          </Col>
-          <Col  md={4} lg={3} xl={3} xxl={2}>
-            <Card className="bg-dark text-white mt-5" style={{height:200}}>
-            
-              <Card.Text className="fs-4">{dati.list[0].dt_txt}</Card.Text>
-            
-              <Card.Text className="fs-5">
-              {dati.list[0].main.temp}°C • <i class="bi bi-droplet text-info"></i> : {dati.list[0].main.humidity}%
-              </Card.Text>
-<Card.Text>
-            {dati && dati.list[0].weather[0].main === "Clouds" && (
-    <i className="bi bi-clouds me-2 fs-2 text-info" ></i>
-  )}  {dati && dati.list[0].weather[0].main === "Rain" && (
-    <i className="bi bi-cloud-drizzle me-2 fs-2 text-primary" ></i>
-  )} {dati && dati.list[0].weather[0].main === "Clear" && (
-    <i className="bi bi-sun me-2 fs-2 text-warning" ></i>
-  )}   {dati.list[0].weather[0].main}
-              </Card.Text>
-
-            </Card>
-           
-          </Col>
 
         </Row>
       )}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 
 const Today = ()=>{
-const link ='/detail'
+const link ='/oggi'
 return(
 <>
 <Container>
@@ -15,11 +15,19 @@ return(
 <Row>
 <Col sm={4} md={4}>
     
-        <Button variant="outline-" className="mb-3  col-5 col-md-5"><a className="butt" href={link}>Oggi</a></Button>
+        <Button variant="outline-" className="mb-3  col-5 col-md-5" href={link}>Oggi</Button>
         
         </Col>
-<Col sm={4} md={4}><Button variant="outline-" className="mb-3 col-lg-7 col-md-5">Settimana</Button></Col>
-<Col sm={4} md={4}><Button variant="outline-" className="col-5 col-md-5">Mese</Button></Col>
+<Col sm={4} md={4}>
+
+        <Button variant="outline-" className="mb-3 col-lg-7 col-md-5" href={link}>Settimana</Button>
+        
+        </Col>
+<Col sm={4} md={4}>
+        
+        <Button variant="outline-" className="col-5 col-md-5" href={link}>Mese</Button>
+        
+        </Col>
 </Row>
 
 
